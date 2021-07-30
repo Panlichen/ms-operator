@@ -1,0 +1,20 @@
+# permissions for end users to view socialnetworks.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: socialnetwork-viewer-role
+rules:
+- apiGroups:
+  - poanpan.poanpan
+  resources:
+  - socialnetworks
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - poanpan.poanpan
+  resources:
+  - socialnetworks/status
+  verbs:
+  - get

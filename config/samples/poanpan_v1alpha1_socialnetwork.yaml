@@ -1,0 +1,7 @@
+apiVersion: poanpan.poanpan/v1alpha1
+kind: SocialNetwork
+metadata:
+  name: socialnetwork-sample
+spec:
+  # Add fields here
+  foo: bar
